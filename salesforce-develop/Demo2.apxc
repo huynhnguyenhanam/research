@@ -1,0 +1,18 @@
+public class Demo2 {
+ 	public String helloWorldString; //Instance Member Variables
+    private static final String DEFAULT_STRING; //Static Member Variables
+    
+    static{
+      DEFAULT_STRING = 'Hello World';  //Static Initializer block
+    }
+    
+    public Demo2(){ //Constructor
+        this(DEFAULT_STRING);
+    }
+    public Demo2(String stringToDisplay){ //Overloaded Constructor
+        this.helloWorldString = stringToDisplay;
+    }
+    public void printOutput(){ //Method
+        System.debug('Display text: ' + helloWorldString);
+    }
+}

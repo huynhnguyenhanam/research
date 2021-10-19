@@ -1,0 +1,25 @@
+public class MathCalculator {
+    private static Integer add(Integer num1, Integer num2){
+        Integer sum = num1 + num2;
+        return sum;
+    }
+    private static Integer multiple(Integer num1, Integer num2){
+        Integer mul = num1 * num2;
+        return mul;
+    }
+    private static void printOutput(Integer output){
+        System.debug(output);
+    }
+    
+    public MathCalculator(){}
+    
+    public void doMath(integer num1, integer num2, string operator){
+        integer value = 0;
+        if(operator == '+'){
+            value = add(num1, num2);
+        }else if(operator == '*'){
+            value = multiple(num1, num2);
+        }
+        MathCalculator.printOutput(value);
+    }
+}
